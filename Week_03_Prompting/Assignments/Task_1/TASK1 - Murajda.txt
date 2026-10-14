@@ -1,12 +1,26 @@
 TASK1:
 RTF (Role-Task-Format) 
 - vybral som si ho, lebo je jednoduchý a rýchly, má len tri sloty, takže sa dá ľahko vysvetliť aj aplikovať
-- očakávam od neho: čistý štruktúrovaný výstup (kód, vzorce) a žiadne "omáčky"
+- očakávam od neho: čistý štruktúrovaný výstup (kód, vzorce) a žiadne "omáčky" za najkratší čas
 - prompt: 
-Role - si expert na riešenie logických a dátových problémov, konkrétne dobrý na dátovú analýzu
-TASK - zanalyzuj dataset restaurants_dataset.csv a zisti, ktoré reštaurácie sa v stĺpci "result" objavujú najčastejšie - zoraď ich od najhľadanejšej po najmenej
-FORMAT - výsledok vypíš ako Markdown tabuľku s dvoma stĺpcami: "Názov reštaurácie" a "Počet výskytov" bez generovania úvodných ani záverečných textov
+ROLE: Si dátový analytik. Vraciaš iba výsledok analýzy, nikdy komentár.
+TASK: Vytvor zoznam reštaurácií zo stĺpca "result" v súbore restaurants_dataset.csv zoradený zostupne podľa počtu výskytov.
+FORMAT: Výsledok vypíš ako Markdown tabuľku s dvoma stĺpcami: "Názov reštaurácie" a "Počet výskytov" bez generovania úvodných a záverečných textov
 
 ICIO:
+- vybral som si ho, lebo úloha je spracovanie dát, na čo je ICIO priamo určený a oddeľuje zadanie, kontext, vstup a výstup, takže je jasné, čo robiť s ktorými dátami
+- očakávam od neho: presný výstup v požadovanej tabuľke a správnejšie počty
+- prompt:
+INSTRUCTION: Zanalyzuj dáta a zisti, ktoré reštaurácie sa v stĺpci "result" objavujú najčastejšie. Následne ich zoraď zostupne od najhľadanejšej po najmenej.
+CONTEXT: Dataset obsahuje stĺpec "result" s názvami reštaurácií, ktoré sa opakujú.
+INPUT: Súbor restaurants_dataset.csv.
+OUTPUT: Markdown tabuľka s dvoma stĺpcami: "Názov reštaurácie" a "Počet výskytov", nevygeneruj žiadny úvodný text.
 
-    
+RACE:
+- vybral som si ho, lebo rozdeľuje prompt na rolu, akciu, kontext a očakávaný výsledok, vďaka čomu je celkové zadanie jasné a prehľadné
+- očakávam od neho: presný výstup v požadovanej tabuľke a správnejšie počty výskytov
+- prompt:
+ROLE: Si dátový analytik. Vraciaš iba výsledok analýzy, nikdy komentár.
+ACTION: Vytvor zoznam reštaurácií zo stĺpca "result" v súbore restaurants_dataset.csv zoradený zostupne podľa počtu výskytov.
+CONTEXT: Dataset obsahuje stĺpec "result" s názvami reštaurácií, ktoré sa opakujú.
+EXPECTATION: Očakávam Markdown tabuľku s dvoma stĺpcami: "Názov reštaurácie" a "Počet výskytov", nevygeneruj žiadny zbytočný text.
