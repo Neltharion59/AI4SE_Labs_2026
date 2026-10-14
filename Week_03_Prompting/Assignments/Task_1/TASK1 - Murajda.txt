@@ -1,0 +1,9 @@
+TASK1:
+RTF (Role-Task-Format) 
+- vybral som si ho, lebo je jednoduchý a rýchly, má len tri sloty, takže sa dá ľahko vysvetliť aj aplikovať
+- očakávam od neho: čistý štruktúrovaný výstup (kód, vzorce) a žiadne "omáčky"
+- prompt: 
+Role: si expert na riešenie logických a dátových problémov
+TASK: dôkladne analyzuj a správne vyrieš problém:
+      
+FORMAT: 
