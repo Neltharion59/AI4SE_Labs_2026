@@ -1,0 +1,13 @@
+model,first_prompt,second_prompt,metric,second_minus_first_pp,different_questions,method,p_raw,p_holm,significant
+GPT-6 sol (High),APE,STAR,accuracy,0.0,0,exact McNemar,1.0,1.0,False
+GPT-6 sol (High),APE,STAR,result_score,0.0,0,identical scores,1.0,1.0,False
+GPT-6 sol (High),APE,ToT,accuracy,0.0,0,exact McNemar,1.0,1.0,False
+GPT-6 sol (High),APE,ToT,result_score,0.0,0,identical scores,1.0,1.0,False
+GPT-6 sol (High),STAR,ToT,accuracy,0.0,0,exact McNemar,1.0,1.0,False
+GPT-6 sol (High),STAR,ToT,result_score,0.0,0,identical scores,1.0,1.0,False
+GPT-5.6 sol (light),APE,STAR,accuracy,2.5806451612903225,28,exact McNemar,0.5715881884098053,1.0,False
+GPT-5.6 sol (light),APE,STAR,result_score,1.1349476137810175,31,paired permutation (200000 resamples),0.7089464552677237,1.0,False
+GPT-5.6 sol (light),APE,ToT,accuracy,9.032258064516128,18,exact McNemar,0.001312255859375,0.0157470703125,True
+GPT-5.6 sol (light),APE,ToT,result_score,6.877604435785467,21,paired permutation (200000 resamples),0.0013999930000349998,0.0157470703125,True
+GPT-5.6 sol (light),STAR,ToT,accuracy,6.451612903225806,16,exact McNemar,0.021270751953125,0.21270751953125,False
+GPT-5.6 sol (light),STAR,ToT,result_score,5.742656822004449,16,exact paired permutation,0.02166748046875,0.21270751953125,False
