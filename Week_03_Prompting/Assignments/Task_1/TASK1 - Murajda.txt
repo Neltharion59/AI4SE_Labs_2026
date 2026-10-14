@@ -3,7 +3,10 @@ RTF (Role-Task-Format)
 - vybral som si ho, lebo je jednoduchý a rýchly, má len tri sloty, takže sa dá ľahko vysvetliť aj aplikovať
 - očakávam od neho: čistý štruktúrovaný výstup (kód, vzorce) a žiadne "omáčky"
 - prompt: 
-Role: si expert na riešenie logických a dátových problémov
-TASK: dôkladne analyzuj a správne vyrieš problém:
-      
-FORMAT: 
+Role - si expert na riešenie logických a dátových problémov, konkrétne dobrý na dátovú analýzu
+TASK - zanalyzuj dataset restaurants_dataset.csv a zisti, ktoré reštaurácie sa v stĺpci "result" objavujú najčastejšie - zoraď ich od najhľadanejšej po najmenej
+FORMAT - výsledok vypíš ako Markdown tabuľku s dvoma stĺpcami: "Názov reštaurácie" a "Počet výskytov" bez generovania úvodných ani záverečných textov
+
+ICIO:
+
+    
